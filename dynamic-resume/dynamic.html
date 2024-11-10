@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Dynamic Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Resume Builder</h2>
+      <form id="resume-form">
+        <!-- Personal Information -->
+        <h3>Personal Information</h3>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+        <label for="linkedin">LinkedIn:</label>
+        <input type="url" id="linkedin" placeholder="LinkedIn profile link">
+
+        <!-- Professional Summary -->
+        <h3>Professional Summary</h3>
+        <textarea id="summary" placeholder="Write a brief summary about yourself"></textarea>
+
+        <!-- Experience -->
+        <h3>Experience</h3>
+        <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+        <!-- Education -->
+        <h3>Education</h3>
+        <textarea id="education" placeholder="Describe your education"></textarea>
+
+        <!-- Skills with Toggle Button -->
+        <h3>Skills</h3>
+        <div id="skills-section">
+          <input type="text" id="skills" placeholder="List your skills, separated by commas">
+        </div>
+
+        <br>
+        <legend>GENERATE RESUME:</legend>
+        <br>
+        <button id="generate-resume-btn" type="button">Generate Resume</button>
+      </form>
+    
+
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="dynamic.js"></script>
+</body>
+</html>
