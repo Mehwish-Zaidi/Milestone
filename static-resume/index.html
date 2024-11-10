@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+    <div class="resume-container">
+            <h1>Static Resume Builder By Mehwish</h1>
+
+        <!-- Personal Information Section with Empty Fields -->
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <p><strong>Email:</strong> <input type="text" id="email" placeholder="Your Email" class="editable" required></p>
+            <p><strong>Phone:</strong> <input type="text" id="phone" placeholder="Your Phone Number" class="editable" required></p>
+            <p><strong>Location:</strong> <input type="text" id="location" placeholder="Your Location" class="editable" required></p>
+            <p><strong>Profile:</strong></p>
+            <input type="file" value="Attach File">
+        </section>
+
+         <!-- Education Section with Empty Fields -->
+         <section class="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <input type="text" placeholder="Degree" class="editable" readonly>
+                <p><strong>University:</strong> <input type="text" placeholder="University Name" class="editable" required></p>
+                <p><strong>Years:</strong> <input type="text" placeholder="Years" class="editable" required></p>
+            </div>
+        </section>
+
+        <!-- Experience Section with Empty Fields -->
+        <section id="experience-section" class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <input type="text" placeholder="Job Title" class="editable" required>
+                <p><strong>Company:</strong> <input type="text" placeholder="Company Name" class="editable" required></p>
+                <p><strong>Years:</strong> <input type="text" placeholder="Years" class="editable" required></p>
+                <p><textarea placeholder="Job Description" class="editable" required></textarea></p>
+            </div>
+        </section>
+
+         <!-- Skills Section with Empty Fields -->
+         <section id="skills-section" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><input type="text" placeholder="Skill 1" class="editable" required></li>
+                <li><input type="text" placeholder="Skill 2" class="editable"></li>
+                <li><input type="text" placeholder="Skill 3" class="editable" /></li>
+            </ul>
+        </section>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+</body>
+</html>

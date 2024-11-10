@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h1{
+    text-align: center;
+}
+
+.resume-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+header .editable {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: #2c3e50;
+}
+
+.job-title {
+    font-style: italic;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-top: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+p, li {
+    color: #333;
+}
+
+.editable {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+textarea.editable {
+    width: 100%;
+    height: 50px;
+    resize: vertical;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 10px auto 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
